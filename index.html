@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .container{
+            background-color: whitesmoke;
+            height: 50rem;
+        
+            
+        }
+        .rect{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #output{
+            width: 100px;
+            height: 50px;
+            border: 1px whitesmoke solid;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-6">
+            <div class="col-md-6 offset-md-3 ">
+                <h2 class="display-4 text-center mt-6"><b>Height Converter</b></h2>
+                    <form id="box">
+                        <div class="form-group">
+                        <input type="number"
+                        id="feet"
+                         placeholder="in feet" 
+                         class="form-control form-control-lg mb-4">
+                        <input type="number"
+                        id="inches"
+                         placeholder="in inches" 
+                         class=" form-control form-control-lg mb-2">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 offset-md-4">
+                                 <button class="btn btn-success mb-4 center">Convert to CM</button>
+                            </div>
+                        </div>
+                        <div id="output"></div>
+                        
+                    </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
